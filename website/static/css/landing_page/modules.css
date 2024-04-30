@@ -1,0 +1,429 @@
+main {
+    width: 1110px;
+    display: grid;
+    height: 100%;
+    grid-gap: 30px;
+    grid-template-columns: repeat(12, 65px);
+    margin: 0 auto;
+}
+
+
+/* Hero Section */
+
+.hero {
+    padding-top: 64px;
+    height: 65vh;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+}
+
+.left_hero {
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+}
+
+.main_hero {
+    position: relative;
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    align-items: center;
+}
+
+.hero_headings {
+    grid-column: 2/6;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_headings h1 {
+    transform: translate(-.35ch);
+}
+
+.cta_socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_cta {
+    margin: 0 0 0 0px;
+    width: 172px;
+}
+
+.soc img{
+    /* background-color: black; */
+    height: 20px;
+    aspect-ratio: 1;
+    margin: 18px 4px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.socials_3 img {
+background-color: black;
+}
+
+.right_hero {
+    grid-column: 7/13;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    background-color: darkred;
+    border-radius: 20px;
+}
+
+
+/* Problem Section */
+.problem {
+    display: grid;
+    position: relative;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    justify-content: center;
+    background: darkgrey;
+    height: 720px;
+    width: 100vw;
+    right: calc(((100vw - 1110px) / 2));
+}
+
+.problem article {
+    margin: 24px 0;
+    grid-column: 1/-1;
+    background: rgba(0, 0, 0, .4);
+}
+
+
+.right_hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Portfolio Section */
+
+
+.portfolio {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    height: 720px;
+}
+
+.value {
+    display: flex;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    grid-column: 5/span 8;
+    height: 4rem;
+}
+
+.value_text {
+    font-weight: bolder;
+}
+
+.proj1 {
+    grid-row: 1/3;
+}
+
+.proj2, .proj3 {
+    grid-row: 2/3;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    grid-column: span 4;
+    grid-template-rows: 60% 40%;
+    background-color: rgba(139, 0, 0, 0.6);
+    height: 100%;
+}
+
+.card_heading {
+    display: flex;
+    grid-column: span 4;
+    grid-row: 1 / 2;
+    /* padding: 24px 24px 0 24px; */
+    background-color: rgb(255, 255, 255);
+    margin: 24px;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+    grid-row: 2 / 3;
+    margin: 0 24px 24px 24px;
+    background-color: rgb(255, 255, 255);
+    transform: translate(0px, -30px);
+    /* margin: 24px; */
+}
+
+
+
+/* Porfolio Sub/Second Section */
+.portfolio2 {
+    height: 272px;
+}
+
+.button_sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.button_sections button {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Me Section */
+
+.about_me {
+    position: relative;
+    display: grid;
+    height: 720px;
+    grid-column: 1/-1;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    width: 100vw;
+    right: calc(((100vw - 1110px) / 2));
+    background: darkred;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    color: WHITE;
+}
+
+.about_text {
+    display: flex;
+    grid-column: 1/8;
+    flex-direction: column;
+}
+
+.about_extra {
+    
+    display: flex;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    grid-column: 8/13;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Skills Section */
+
+.skills {
+    position: relative;
+    display: grid;
+    height: 720px;
+    grid-column: 1/-1;
+    grid-template-columns: inherit;
+    grid-template-rows: auto 1fr;
+    width: 100vw;
+    right: calc(((100vw - 1110px) / 2));
+    grid-gap: inherit;
+    background: lightgray;
+    padding: 30px 12px;
+    justify-content: center;
+}
+
+.skill_title {
+    display: flex;
+    flex-direction: column;
+    grid-column: inherit;
+    grid-row: 1;
+}
+
+.skill_selection {
+    display: grid;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    grid-row: 2;
+}
+
+.skill_radio {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/5;
+}
+
+.skill_projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-column: 5/13;
+    height: 500px;
+}
+
+.project_div {
+    display: flex;
+    padding: 6px 6px;
+    margin: 4px 0;
+    background-color: darkred;
+    width: 285px;
+    border-radius: 10px;
+}
+
+.project_div a {
+    display: flex;
+    align-items: center;
+}
+
+.project_div p, .project_div h4{
+    display: flex;
+    padding: 0 0 0 6px;
+}
+
+.skills_div input[type="radio"] {
+    appearance: none;
+    background-color: white;
+    border: none;
+    margin: 0;
+}
+
+.skills_div {
+    justify-content: center;
+    display: inline-block;
+    margin: 6px;
+    min-width: 130px;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+}
+
+.skills_div label {
+    align-items: center;
+    display: inline-block;
+    min-width: 130px;
+    padding: 8px;
+}
+
+.skills_div:has(> input[type]:checked) {
+    background-color: brown;
+}
+
+/* Contact Section */
+
+.contact_me {
+    display: grid;
+    height: 720px;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    
+}
+
+.contact_form {
+    grid-column: span 7;
+    height: auto;
+    align-self: center;
+    width: 100%;
+}
+
+.contact_form label /*, .contact_form input*/ { 
+    line-height: 2.0rem;
+}
+
+.contact_form fieldset /*, .contact_form input*/ { 
+    line-height: 2.0rem;
+    border: none;
+}
+
+.contact_form select /*, .contact_form input*/ { 
+    border: solid black 3px;
+    background-color: transparent;
+    height: 2rem;
+    width: 100%;
+}
+
+.contact_form textarea {
+    height: 24px;
+}
+
+.submit_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numb_tst {
+    width: 2rem;
+    border: none;
+    border-bottom: solid black 2px;
+}
+
+.contact_form input[type=submit] {
+    margin: 10px;
+    height: 36px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s linear;
+}
+
+.contact_form input[type=submit]:hover{
+    background-color: darkred;
+}
+
+.text_input input, .input_text{
+    font-style: italic;
+    width: 100%;
+    padding: 0 0 0 5px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.numb_tst {
+    width: 2rem;
+    border: none;
+    border-bottom: solid black 2px;
+}
+
+.text_input input:focus, .input_text:focus, .numb_tst:focus {
+    box-sizing: border-box;
+    border: none;
+    outline: 3px darkred solid;
+}
+
+.contact_form select:focus {
+    box-sizing: border-box;
+    border: 3px darkred solid;
+}
+
+.input_spacer {
+    padding: 8px 0 0 0;
+}
+
+.contact_article {
+    display: flex;
+    grid-column: 8 / span 5;
+    grid-template-columns: inherit;
+    grid-gap: inherit;
+    background-color: lightgray;
+    padding: 24px;
+    border-radius: 20px;
+}
+
+.contact_text .my_email{
+    font-weight:bold;
+}
+
+.contact_text .my_email span{
+    font-weight:100;
+}

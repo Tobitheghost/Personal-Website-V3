@@ -1,0 +1,156 @@
+{% extends "base.html"%}
+{% block title %}Modules{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/landing_page/modules.css')}}">
+{% endblock %}
+
+<body>
+    {% block content %}
+    <main>
+        <section class="hero">
+            <article class="left_hero sub_hero">
+                <div class="main_hero">
+                    <div class="hero_headings">
+                        <!-- <h3 class="pre_heading">Hi there, my name is</p> -->
+                        <h1>Tobi Ghost</h1>
+                        <h3 class="sub_heading">Your Next Python Specialist,<br> Data Engineer and Full Stack Dev</p>
+                        <div class="cta_socials">
+                            <button class="left_cta">Set up a Meeting!</button>
+                            <div class="soc socials_1"></div>
+                            <div class="soc socials_2"></div>
+                            <div class="soc socials_3"></div>
+                            <div class="soc socials_4"></div>
+                            <div class="soc socials_5"></div>
+                            <div class="soc socials_6"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="right_hero sub_hero"></article>
+        </section>
+
+        <section class="problem">
+            <article>
+
+            </article>
+
+        </section>
+
+        <section class="portfolio">
+
+            <article class="card proj1">
+                <div class="card_heading">
+                    <a><img/></a>
+                </div>
+                <div class="card_text">
+                    <h2>Title</h2>
+                    <p>Description: I am a solutions oriented Software Developer. I'm looking to expand my expertise and meet and learn from many people along the way. I have experience in Photography, and Graphic Design but my Focus is in Computer Science, recently mainly Data Analyst and Manipulation.</p>
+                </div>
+            </article>
+
+            <article class="card proj2">
+                <div class="card_heading"></div>
+                <div class="card_text">
+                    <h2>Title</h2>
+                    <p>Description: I am a solutions oriented Software Developer. I'm looking to expand my expertise and meet and learn from many people along the way.</p>
+                </div>
+            </article>
+
+            <article class="card proj3">
+                <div class="card_heading"></div>
+                <div class="card_text">
+                    <h2>Title</h2>
+                    <p>Description:  I am a solutions oriented Software Developer. I'm looking to expand my expertise and meet and learn from many people along the way.<br><br> I have experience in Photography</p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="portfolio2">
+            <article>
+                <div class="second_portfolio title">
+                    <h2>More of my work.</h2>
+                    <p>I have worked in a couple different fields in my Computer Science Career so I have more examples of my work in my portfolio tab but i also have sections available below.</p>
+                </div>
+                <div class="button_sections">
+                    <button>Full Stack Projects</button>
+                    <button>Game Dev Projects</button>
+                    <button>Pixel Art</button>
+                    <button>Social Platform Project</button>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="about_me">
+            <!-- Add a Character Creator on the right side so the recreuiter can make a pixel character that will shake my hand -->
+        </section>
+
+        <section class="skills"></section>
+
+        <section class="contact_me">
+            <article class="contact_form">
+                <form>
+                    <fieldset>
+
+                        <legend><h2>Contact Me</h2></legend>
+
+                        <div class="input_spacer text_input">
+                            <label for="input_name" class="inputlabel_name">Your Name*</label>
+                                <br/>
+                            <input type="text" id="input_name" name="input_name" class="input_name" placeholder="Name" required/>
+                                <br/>
+                        </div>
+
+                        <div class="input_spacer">
+                            <label for="input_entity" class="inputlabel_entity">Are you with an Orginization or an Individual*</label>
+                                <br/>
+                            <select id="input_entity" name="input_entity" class="input_entity">
+                                <option name="input_option_org" value="orginization">Orginization</option>
+                                <option name="input_option_ind" value="individual">Individual</option>
+                            </select>
+                                <br/>
+                        </div>
+
+                        <div class="input_spacer text_input">
+                            <label for="input_email" class="inputlabel_email">Your Email*</label>
+                                <br/>
+                            <input type="email" id="input_email" name="input_email" class="input_email" placeholder="Email Address" required/>
+                                <br/>
+                        </div>
+
+                        <div class="input_spacer">
+                            <label for="input_textarea" class="inputlabel_text">Your Message</label>
+                                <br/>
+                            <textarea id="input_textarea" name="input_name" class="input_text" rows="1" cols="41" placeholder="What is a good time to set up a meeting?" required spellcheck="default"></textarea>
+                                <br/>
+                        </div>
+
+                        <div class="input_spacer submit_area">
+                            <input type="submit" name="contact_submit" value="Send Message"/>
+
+                            <div class="check_numb">
+                                <label for="number" class="numblable_tst">1 + 5 =</label>
+                                <input type="text" id="number" class="numb_tst" required maxlength="1">
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </article>
+                
+            <article class="contact_article">
+                <div class="contact_text">
+                    <p class="my_email">
+                        <span>My Email: </span>Tobitheeghoost@gmail.com
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        
+    </main>
+    {% endblock %}
+</body>
+</html>

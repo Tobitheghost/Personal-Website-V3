@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>{% block title %}Base{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <div class="nav_margin">
+            <div class="logo_wrapper">
+                <a>
+                    <img src="{{url_for('static', filename='pages/landing_page/images/logo.png')}}">
+                </a>
+            </div>
+
+            <div class="nav_links">
+                <ul>
+                    <li>{% block sourkat_link %}<a><span>Sour Kat</span></a>{% endblock %}</li>
+                    <li>{% block portfolio_link %}<a href="#portfolio"><span>Portfolio</span></a>{% endblock %}</li>
+                    <li>{% block aboutme_link %}<a href="#about_me"><span>About Me</span></a>{% endblock %}</li>
+                    <li>{% block contactme_link %}<a href="#contact_me"><button>Contact Me</button></a>{% endblock %}</li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+    {% block content %}
+    
+    {% endblock %}
+    <footer class="footer">
+        <div class="foot_wrapper footer1">
+            <ul>
+                <li class="filled"><h4>Home Page</h4></li>
+                <li class="filled"><p>Recreuiter Landing Page</p></li>
+                <li class="filled"><p>About Me</p></li>
+                <li class="filled"><p>Portfolio</p></li>
+                <li class="filled"><p>Sour Kat</p></li>
+                <li class="filled"><p>Blog</p></li>
+            </ul>
+        </div>
+        <div class="foot_wrapper footer2">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+            </ul>
+        </div>
+        <div class="foot_wrapper footer3">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+            </ul>
+        </div>
+        <div class="foot_wrapper footer4">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
