@@ -1,0 +1,331 @@
+{% extends "base.html"%}
+{% block title %}Modules{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/landing_page/modules.css')}}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="hero" id="hero">
+        <article class="left_hero sub_hero">
+            <div class="main_hero">
+                <div class="hero_headings">
+                    <h1>Tobi Ghost</h1>
+                    <h3 class="sub_heading">Your Next Python Specialist,<br> Data Engineer and Full Stack Dev</p>
+                        <div class="cta_socials">
+                            <button class="left_cta">Set up a Meeting!</button>
+
+                            <a class="soc socials_1" href="https://github.com/Tobitheghost"><img class="github_logo link_logo"
+                                    src="{{url_for('static', filename='pages/landing_page/svg/social_links/github-mark.svg')}}" /></a>
+
+                            <a class="soc socials_2" href="https://www.linkedin.com/in/tobitheghost/"><img class="github_logo link_logo"
+                                    src="{{url_for('static', filename='pages/landing_page/svg/social_links/linkedin.svg')}}" /></a>
+
+                            <a class="soc socials_3" href="https://twitter.com/A_sourkat"><img class="github_logo link_logo"
+                                    src="{{url_for('static', filename='pages/landing_page/svg/social_links/twitter-white.svg')}}" /></a>
+
+                            <a class="soc socials_4" href="https://www.instagram.com/a_sourkat/"><img class="github_logo link_logo"
+                                    src="{{url_for('static', filename='pages/landing_page/svg/social_links/instagram-mark-black.svg')}}" /></a>
+
+                            <a class="soc socials_5" href="https://mastodon.social/@A_sourkat"><img class="github_logo link_logo"
+                                    src="{{url_for('static', filename='pages/landing_page/svg/social_links/mastodon-mark-black.svg')}}" /></a>
+                        </div>
+                </div>
+            </div>
+        </article>
+        <article class="right_hero sub_hero">
+            <a><img src="{{url_for('static', filename='pages/landing_page/images/Hero_Image_Template.png')}}"/></a>
+        </article>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+
+        <article class="value">
+            <div>
+                <h3 class="value_text"> Hire someone who can appreciate your value proposition and grows with your company to reach new heights.</h3>
+            </div>
+        </article>
+
+        <article class="card proj1">
+            <div class="card_heading">
+                <a><img src="{{url_for('static', filename='pages/landing_page/images/Portfolio_Image_Template.png')}}"/></a>
+            </div>
+            <div class="card_text">
+                <h2>Parcel Viewer</h2>
+                <p>Description: Parcel Viewer Desc...</p>
+            </div>
+        </article>
+
+        <article class="card proj2">
+            <div class="card_heading">
+                <a><img src="{{url_for('static', filename='pages/landing_page/images/Portfolio_Image_Template_Small.png')}}"/></a>
+            </div>
+            <div class="card_text">
+                <h2>Employee Analytics Dashboard</h2>
+                <p>Implemented a website solution optimizing metric visualization and tracking for management, addressing challenges in meeting higher-ups' requests for budget and staffing justifications.</p>
+            </div>
+        </article>
+
+        <article class="card proj3">
+            <div class="card_heading">
+                <a><img src="{{url_for('static', filename='pages/landing_page/images/Portfolio_Image_Template_Small.png')}}"/></a>
+            </div>
+            <div class="card_text">
+                <h2>Coming Soon</h2>
+                <p>Description: Coming Soon</p>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="portfolio2">
+        <article>
+            <div class="second_portfolio title">
+                <h2>More of my work.</h2>
+                <p>I have worked in a couple different fields in my Computer Science Career so I have more examples
+                    of my work in my portfolio tab but i also have sections available below.</p>
+            </div>
+            <div class="button_sections">
+                <button>Full Stack Projects</button>
+                <button>Game Dev Projects</button>
+                <button>Pixel Art</button>
+                <button>Social Platform Project</button>
+            </div>
+
+        </article>
+
+    </section>
+
+    <section class="about_me" id="about_me">
+        <div class="about_text">
+            <h2>About Me:</h2>
+            <p>My Name is Tobi and I live in Kansas City, Missouri (Go CHEIFS!) in the United States. While I have hardly been outside my State,
+                let alone my Country, I have always loved exploring technologies and cultures. An easy way to accomplish this interest was through
+                art. I graduated from an Art School and have been winning awards for Drawing or Poetry or Graphic Design from a young age.<br><br>While not having
+                to much money growing up, learning to create art on a computer was easier since there was less materials needed. I learned Graphic Design,
+                Photo Editing and more, jumping from interest to interest before getting a "Building a Web Site For Dummies" book for a birthday, and thus started
+                my Software Development obsession.
+            </p>
+        </div>
+        <div class="about_extra">
+        <!-- Add a Character Creator on the right side so the recreuiter can make a pixel character that will shake my hand -->
+            <a><img src="{{url_for('static', filename='pages/landing_page/images/About_Image_Template.png')}}"/></a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <article class="skill_title">
+            <h2>Skills</h2>
+            <p>I have alot of different skills. if you pick a skill below, you can see the related projects in my portfolio</p>
+        </article>
+        <article class="skill_selection">
+            <div class="skill_radio">
+                <form>
+                    <div class="skills_div skill_a">
+                        <input type="radio" id="skill_a" name="skills" value="skill_a">
+                        <label for="skill_a">skill_a</label>
+                    </div>
+                    <div class="skills_div skill_b">
+                        <input type="radio" id="skill_b" name="skills" value="skill_b">
+                        <label for="skill_b">skill_b</label>
+                    </div>
+                    <div class="skills_div skill_c">
+                        <input type="radio" id="skill_c" name="skills" value="skill_c">
+                        <label for="skill_c">skill_c</label>
+                    </div>
+                    <div class="skills_div skill_d">
+                        <input type="radio" id="skill_d" name="skills" value="skill_d">
+                        <label for="skill_d">skill_d</label>
+                    </div>
+                    <div class="skills_div skill_e">
+                        <input type="radio" id="skill_e" name="skills" value="skill_e">
+                        <label for="skill_e">skill_e</label>
+                    </div>
+                    <div class="skills_div skill_f">
+                        <input type="radio" id="skill_f" name="skills" value="skill_f">
+                        <label for="skill_f">skill_f</label>
+                    </div>
+                    <div class="skills_div skill_g">
+                        <input type="radio" id="skill_g" name="skills" value="skill_g">
+                        <label for="skill_g">skill_g</label>
+                    </div>
+                    <div class="skills_div skill_h">
+                        <input type="radio" id="skill_h" name="skills" value="skill_h">
+                        <label for="skill_h">skill_h</label>
+                    </div>
+                    <div class="skills_div skill_i">
+                        <input type="radio" id="skill_i" name="skills" value="skill_i">
+                        <label for="skill_i">skill_i</label>
+                    </div>
+                    <div class="skills_div skill_j">
+                        <input type="radio" id="skill_j" name="skills" value="skill_j">
+                        <label for="skill_j">skill_j</label>
+                    </div>
+                    <div class="skills_div skill_k">
+                        <input type="radio" id="skill_k" name="skills" value="skill_k">
+                        <label for="skill_k">skill_k</label>
+                    </div>
+                    <div class="skills_div skill_l">
+                        <input type="radio" id="skill_l" name="skills" value="skill_l">
+                        <label for="skill_l">skill_l</label>
+                    </div>
+                    <div class="skills_div skill_m">
+                        <input type="radio" id="skill_m" name="skills" value="skill_m">
+                        <label for="skill_m">skill_m</label>
+                    </div>
+                    <div class="skills_div skill_n">
+                        <input type="radio" id="skill_n" name="skills" value="skill_n">
+                        <label for="skill_n">skill_n</label>
+                    </div>
+                    <div class="skills_div skill_o">
+                        <input type="radio" id="skill_o" name="skills" value="skill_o">
+                        <label for="skill_o">skill_o</label>
+                    </div>
+                </form>
+            </div>
+            <div class="skill_projects">
+                <div class="project_div project_a">
+                    <a class="project_a_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}" /></a>
+                    <div class="project_a_txt">
+                        <h4>project_a</h4>
+                        <p>Short Description</p>
+                    </div>
+                </div>
+                <div class="project_div project_b">
+                    <a class="project_b_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_b_txt">
+                        <h4>project_b</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+                <div class="project_div project_c">
+                    <a class="project_c_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_c_txt">
+                        <h4>project_c</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+                <div class="project_div project_d">
+                    <a class="project_d_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_d_txt">
+                        <h4>project_d</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+                <div class="project_div project_e">
+                    <a class="project_e_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_e_txt">
+                        <h4>project_e</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+                <div class="project_div project_f">
+                    <a class="project_f_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_f_txt">
+                        <h4>project_f</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+                <div class="project_div project_g">
+                    <a class="project_g_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_g_txt">
+                        <h4>project_g</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+                <div class="project_div project_h">
+                    <a class="project_h_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_h_txt">
+                        <h4>project_h</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+                <div class="project_div project_i">
+                    <a class="project_i_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_i_txt">
+                        <h4>project_i</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+                <div class="project_div project_j">
+                    <a class="project_j_img"><img src="{{url_for('static', filename='pages/landing_page/images/Skills_Image_Template.png')}}"/></a>
+                    <div class="project_j_txt">
+                        <h4>project_j</h4>
+                        <p>Short Description </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="contact_me" id="contact_me">
+        <article class="contact_form">
+            <form method="Post" action="{{url_for('home.landing', _anchor='contact_me')}}">
+                <fieldset>
+
+                    <legend>
+                        <h2>Contact Me</h2>
+                        {% with messages = get_flashed_messages()%}
+                            {% if messages %}
+                                {% for message, catagory in messages %}
+                                    {% if message == None%}
+
+                                    {% else %}
+                                        <span><p class="{{ catagory }}">{{ message }}</p></span>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}    
+                    </legend>
+
+                    {{ form.hidden_tag() }}
+                    <div class="input_spacer text_input">
+                        {{ form.name.label(class_="inputlabel_name") }}
+                        {{ form.name(class_="input_name", placeholder="Name")}}
+                    </div>
+
+                    <div class="input_spacer">
+                        <label for="input_entity" class="inputlabel_entity">Are you with an Orginization or an
+                            Individual*</label>
+                        <br />
+                        <select id="input_entity" name="input_entity" class="input_entity">
+                            <option name="input_option_org" value="orginization">Orginization</option>
+                            <option name="input_option_ind" value="individual">Individual</option>
+                        </select>
+                        <br />
+                    </div>
+
+                    <div class="input_spacer text_input">
+                        {{ form.email.label(class_="inputlabel_email") }}
+                        {{ form.email(class_="input_email", placeholder="Email Address") }}
+                    </div>
+
+                    <div class="input_spacer">
+                        {{ form.textarea.label(class_="inputlabel_text") }}
+                        {{ form.textarea(class_="input_text", placeholder="What is a good time to set up a
+                        meeting?") }}
+                    </div>
+
+                    <div class="input_spacer submit_area">
+                        {{ form.submitbtn(class_="contact_submit") }}
+
+                        <div class="check_numb">
+                            {{ form.test.label(class_="numblable_tst") }}
+                            {{ form.test(class_="numb_tst") }}
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </article>
+
+        <article class="contact_article">
+            <div class="contact_text">
+                <p class="my_email">
+                    <span>My Email: </span>Tobitheeghoost@gmail.com
+                </p>
+            </div>
+        </article>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+{% block title %}Modules{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/javascript_counter.css')}}">
+{% endblock %}
+{% block content %}
+    <label id="counterLabel">0</label>
+    <div id="buttonContainer">
+        <button id="increaseButton"></button>
+        <button id="resetButton"></button>
+        <button id="decreaseButton"></button>
+    </div>
+
+    <script src="{{url_for('static', filename='javascript/index.js')}}"></script>
+{% endblock %}

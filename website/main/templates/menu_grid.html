@@ -1,0 +1,75 @@
+{% extends "base.html"%}
+{% block title %}Modules{% endblock %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{{url_for('static', filename='css/landing_page/modules.css')}}"> -->
+<link rel="stylesheet" href="{{url_for('static', filename='css/landing_page/menu_grid.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<main>
+    <section class="title">
+        <article class="title_area">
+            <h1>Title</h1>
+            <h2>Sub-Title</h2>
+        </article>
+        <article class="filter_areas">
+            <h3>Filters:</h3>
+            <div class="filter_buttons">
+                <button type="submit" class="button_filters">button label</button>
+            </div>
+
+            <div class="filter_buttons">
+                <button type="submit" class="button_filters">button label</button>
+            </div>
+
+            <div class="filter_buttons">
+                <button type="submit" class="button_filters">button label</button>
+            </div>
+        </article>
+
+    </section>
+    <section class="grid_cards">
+        <article class="card">
+            <div class="card_heading">
+                <a href="{{url_for('javascript_counter.index')}}"><img src="{{url_for('static', filename='pages/landing_page/images/Portfolio_Image_Template.png')}}"/></a>
+            </div>
+            <div class="card_text">
+                <h2>One ONe one one one one</h2>
+                <p>Implemented a website solution optimizing metric  asf sadfgasd and tracking for management, addressing challenges in meeting higher-ups' requests for budget and staffing justifications.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card_heading">
+                <a><img src="{{url_for('static', filename='pages/landing_page/images/Portfolio_Image_Template.png')}}"/></a>
+            </div>
+            <div class="card_text">
+                <h2>Employee Analytics Dashboard</h2>
+                <p>Implemented a website solution optimizing metric visualization and tracking for management, addressing challenges in meeting higher-ups' requests for budget and staffing justifications.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card_heading">
+                <a><img src="{{url_for('static', filename='pages/landing_page/images/Portfolio_Image_Template.png')}}"/></a>
+            </div>
+            <div class="card_text">
+                <h2>Employee Analytics Dashboard</h2>
+                <p>Implemented a websists for budget and staffing justifications.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card_heading">
+                <a><img src="{{url_for('static', filename='pages/landing_page/images/Portfolio_Image_Template.png')}}"/></a>
+            </div>
+            <div class="card_text">
+                <h2>Employee Analytics Dashboard</h2>
+                <p>Implemented a website solution optimizing metric visualization and tracking for management, addressing challenges in meeting higher-ups' requests for budget and staffing justifications.</p>
+            </div>
+        </article>
+    </section>
+</main>
+
+{% endblock %}
